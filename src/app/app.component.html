@@ -1,10 +1,17 @@
-<div class="site">
-  <header></header>
-  <app-header></app-header>
+<md-sidenav-container>
+  <md-sidenav #sidenav>
+    <app-sidebar></app-sidebar>
+  </md-sidenav>
+  <div class="site">
+    <header></header>
+    <app-header></app-header>
 
-  <main></main>
-  <footer>
-    <app-footer></app-footer>
-  </footer>
+    <main>
+      <button (click)="sidenav.open()">open sidebar</button>
+    </main>
+    <footer>
+      <app-footer></app-footer>
+    </footer>
 
-</div>
+  </div>
+</md-sidenav-container>

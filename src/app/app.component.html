@@ -4,10 +4,9 @@
   </md-sidenav>
   <div class="site">
     <header></header>
-    <app-header></app-header>
+    <app-header (toggle)="sidenav.toggle()"></app-header>
 
     <main>
-      <button (click)="sidenav.open()">open sidebar</button>
     </main>
     <footer>
       <app-footer></app-footer>
